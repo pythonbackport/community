@@ -1,0 +1,40 @@
+labels: [CUBE World Project, need:view]
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      > [!WARNING]
+      > This is by no means a place for sharing formal ideas. 
+      >
+      > Treat this space as nothing more than a brainstorming session. 
+      > If you wish to submit serious concepts, please post them in the dedicated channel for formal proposals.
+      
+      ~~What exactly are you trying to do? Do you want to make radical remarks or offer incisive comments?~~
+
+      What brilliant idea do you need to share with us? Or are you just too excited to hold it back? 
+      Come join our *brainstorming session*! Feel free to speak your mind and chat openly here, 
+      but all discussions must stay relevant to this topic. Try to come up with bold, 
+      creative ideas—they can be really impressive. We will go through all posts and 
+      comments shared under this thread. If an idea is brilliant, forward-thinking, outstanding 
+      and insightful enough, we will **consider adopting** it. If not, it will simply be discarded. Everyone, just chat casually.
+
+- type: dropdown
+  id: reason
+  attributes:
+    label: "🏷️ Discussion Type"
+    description: Tell us your goal! An crazy idea or something good...
+    options:
+      - "Crazy Idea!"
+      - "Brilliant Product"
+      - "Something Else Entirely"
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: "Discussion Details"
+    description: >-
+      Share your boundless imagination and wonderful creative ideas—we might end up adopting them.
+  validations:
+      required: true
