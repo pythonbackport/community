@@ -1,0 +1,104 @@
+labels: ["Formal Idea", "need:review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        :electron: **Formal Ideas Discussions**
+
+        Submit your serious thoughts here. There is a solid chance these proposals
+        will be officially adopted and developed into outstanding solutions.
+
+        > [!IMPORTANT]
+        > This space is reserved for **formal proposals** that you genuinely believe
+        > should be considered for adoption. For casual brainstorming and wild ideas,
+        > please use the *Cube World Project* discussion space instead.
+
+  - type: dropdown
+    id: idea-category
+    attributes:
+      label: "Proposal Category"
+      description: Pick the area your idea best fits under.
+      options:
+        - "Feature / API Design"
+        - "Tooling & Infrastructure"
+        - "Process & Governance"
+        - "Documentation & Education"
+        - "Ecosystem & Compatibility"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: "Expected Impact"
+      description: How significant do you expect the impact of this proposal to be?
+      options:
+        - "Low (nice to have)"
+        - "Medium (improves day-to-day work)"
+        - "High (shapes project direction)"
+        - "Critical (foundational change)"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: "Proposal Title"
+      description: A short, clear name for your idea.
+      placeholder: "e.g. Standardize a cross-version compatibility shim for inspect"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem Statement"
+      description: What problem are you trying to solve? Why does it matter?
+      placeholder: |
+        Describe the current pain point, who is affected, and what the cost of
+        inaction is. Be specific and back claims with examples when possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: ":hammer_and_wrench: Proposed Solution"
+      description: Outline your idea in detail. The more concrete, the better.
+      placeholder: |
+        Walk us through your proposal step by step. Include pseudocode, API
+        sketches, or diagrams if they help. Mention any alternative approaches
+        you considered and why yours is preferable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: ":balance_scale: Alternatives Considered"
+      description: What other approaches have you considered, and why is yours better?
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: ":warning: Risks & Trade-offs"
+      description: Be honest about the downsides, breaking-change risks, or open questions.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ":white_check_mark: Author Checklist"
+      description: Please confirm the following before submitting.
+      options:
+        - label: "I have searched existing discussions and found no duplicate proposal."
+          required: true
+        - label: "I am willing to iterate on this proposal based on community feedback."
+          required: true
+        - label: "I understand the team reserves the right to accept, defer, or reject this proposal."
+          required: true
