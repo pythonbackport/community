@@ -1,5 +1,8 @@
 # Python Backport Developers Community Discussions
 
+> [!IMPORTANT]
+> This community is archived. We have moved all discussions to our new Discord server.
+
 Within this repository, feel free to respond to existing questions, raise new ones, 
 or share your thoughts and suggestions regarding the team and the pythonbackport organization. 
 You may bring up any topics you like here, provided they relate to this organization.
